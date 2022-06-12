@@ -12,8 +12,19 @@
 <!-- <p [class]="classes">fourth paragraph</p> -->
 
 
-<p *ngIf="isUserShown; else myelse" >this is ngif</p>
+<!-- <p *ngIf="isUserShown; else myelse" >this is ngif</p>
 <ng-template #myelse>
   <p >this is else</p>
-</ng-template>
+</ng-template> -->
 <!-- <app-users *ngIf="isUserShown"></app-users> -->
+
+
+
+
+<!-- <div *ngFor="let user of users;let i=index;">{{i+' '+user}}</div> -->
+<button (click)="changeUsersObj()">change user object</button>
+
+<div *ngFor="let user of usersObj">{{user.id+' : '+user.name}}</div>
+
+
+

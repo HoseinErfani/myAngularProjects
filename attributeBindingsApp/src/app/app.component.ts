@@ -10,10 +10,18 @@ export class AppComponent implements OnInit {
   isCurrect: boolean = false;
   isModified: boolean = true;
   isCancelled: boolean = true;
-  isUserShown:boolean=false;
+  isUserShown: boolean = false;
 
   styles = {}
   classes = {}
+
+
+
+  usersObj: any = [
+    { id: 1, name: 'ali' },
+    { id: 2, name: 'amir' },
+    { id: 3, name: 'reza' },
+  ]
 
   constructor() {
 
@@ -22,7 +30,21 @@ export class AppComponent implements OnInit {
   }
 
 
+  public changeUsersObj() {
+    // console.log('added');
+   
+    
+    
+    this.usersObj = [
+      { id: 1, name: 'ali' },
+      { id: 2, name: 'amir' },
+      { id: 3, name: 'reza' },
+      { id: 4, name: 'moin' },
+    ]
 
+
+    // console.log(this.usersObj);
+  }
 
   ngOnInit(): void {
     console.log('this is on init');
@@ -31,9 +53,9 @@ export class AppComponent implements OnInit {
       'color': 'blue'
     }
 
-    this.classes={
-      'big-font-size':this.isModified,
-      'red-font':this.isCancelled
+    this.classes = {
+      'big-font-size': this.isModified,
+      'red-font': this.isCancelled
     }
 
     // throw new Error("method not implemented")
