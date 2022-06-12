@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   isCurrect: boolean = false;
   isModified: boolean = true;
   isCancelled: boolean = true;
-
+  isUserShown:boolean=false;
 
   styles = {}
   classes = {}
