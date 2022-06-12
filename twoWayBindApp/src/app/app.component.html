@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 mx-auto mt-5">
+
+
+      <div class="alert alert-info">{{name}}</div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">name</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1" (input)="onInputChangeName($event)">
+        
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">password</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1" (input)="onInputChangePass($event)">
+      </div>
+      <div  [hidden]="password!==''" class="alert alert-danger">enter password</div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">confirm password</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1" (input)="onInputChangePassConf($event)">
+      </div>
+
+
+      <div [hidden]="isPassConfirmed===0" class="alert alert-{{passConfirmedClass}}">{{passMessage}}</div>
+
+
+
+
+    </div>
+  </div>
+</div>
