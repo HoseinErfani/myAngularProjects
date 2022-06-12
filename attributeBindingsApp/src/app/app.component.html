@@ -22,9 +22,15 @@
 
 
 <!-- <div *ngFor="let user of users;let i=index;">{{i+' '+user}}</div> -->
-<button (click)="changeUsersObj()">change user object</button>
+<!-- <button (click)="changeUsersObj()">change user object</button>
 
 <div *ngFor="let user of usersObj;trackBy:trackByFunc">{{user.id+' : '+user.name}}</div>
+ -->
 
 
-
+<div [ngSwitch]="switchKeyWord">
+  <app-switch-case1 *ngSwitchCase="'a'"></app-switch-case1>
+  <app-switch-case2 *ngSwitchCase="'b'"></app-switch-case2>
+  <app-switch-case3 *ngSwitchCase="'c'"></app-switch-case3>
+  <app-switch-case4 *ngSwitchCase="'d'"></app-switch-case4>
+</div>

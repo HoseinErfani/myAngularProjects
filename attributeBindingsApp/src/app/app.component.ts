@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   styles = {}
   classes = {}
 
+  switchKeyWord:string='a';
 
 
   usersObj: any = [
