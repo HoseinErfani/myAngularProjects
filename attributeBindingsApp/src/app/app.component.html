@@ -24,7 +24,7 @@
 <!-- <div *ngFor="let user of users;let i=index;">{{i+' '+user}}</div> -->
 <button (click)="changeUsersObj()">change user object</button>
 
-<div *ngFor="let user of usersObj">{{user.id+' : '+user.name}}</div>
+<div *ngFor="let user of usersObj;trackBy:trackByFunc">{{user.id+' : '+user.name}}</div>
 
 
 

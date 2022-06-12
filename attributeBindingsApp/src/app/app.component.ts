@@ -37,8 +37,9 @@ export class AppComponent implements OnInit {
     
     this.usersObj = [
       { id: 1, name: 'ali' },
-      { id: 2, name: 'amir' },
-      { id: 3, name: 'reza' },
+      { id: 2, name: 'zahra' },
+      { id: 3, name: 'erfane' },
+      { id: 4, name: 'moin' },
       { id: 4, name: 'moin' },
     ]
 
@@ -46,6 +47,10 @@ export class AppComponent implements OnInit {
     // console.log(this.usersObj);
   }
 
+  public trackByFunc(index:number,element:any){
+    return element.id;
+  }
+  
   ngOnInit(): void {
     console.log('this is on init');
     this.styles = {
