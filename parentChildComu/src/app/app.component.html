@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row">
+        <div class="col-5 mx-auto mt-5">
+            <app-star *ngFor="let rating of ratings" [rating]="rating"  (starClicked)="getRating($event)"></app-star>
+            
+        </div>
+    </div>
+</div>
