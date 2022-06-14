@@ -8,4 +8,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'encaps.localRef';
+
+  public showAlert(inputElem:HTMLInputElement){
+    console.log(inputElem.value);
+    inputElem.value='';
+  }
 }
