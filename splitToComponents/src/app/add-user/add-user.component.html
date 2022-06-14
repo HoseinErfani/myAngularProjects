@@ -1,0 +1,22 @@
+<form>
+
+    <div class="mb-3">
+      <label class="form-label">Email address</label>
+      <input #email type="email" class="form-control" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">username</label>
+      <input #username type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <textarea #address type="text" class="form-control"></textarea>
+    </div>
+
+    <button (click)="addUser(email.value,username.value,address.value,$event)" type="submit" class="btn btn-primary">add user</button>
+
+
+  </form>
