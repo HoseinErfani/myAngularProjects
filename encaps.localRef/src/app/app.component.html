@@ -1,6 +1,28 @@
-<p>app component</p>
-<label for="">this is APP</label>
+<div class="container">
+  <div class="row">
+    <div class="col-6 mt-5 mx-auto">
 
-<input type="text" #input>
-<button (click)="showAlert(input)">click me</button>
-<app-inc></app-inc>
+      <p>app component</p>
+      <label for="">this is APP</label>
+
+      <input type="text" #input>
+      <button (click)="showAlert(input)">click me</button>
+
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 mt-5 mx-auto">
+      <hr/>
+      <app-inc></app-inc><hr/>
+      <app-inc></app-inc><hr/>
+      <app-inc></app-inc><hr/>
+      <app-inc></app-inc><hr/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 mt-5 mx-auto">
+      <button class="btn btn-secondary" (click)="increament2()">increament from app component</button>
+    </div>
+  </div>
+</div>
